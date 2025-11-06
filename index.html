@@ -1,0 +1,49 @@
+html
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ឧបករណ៍បំលែងខ្នាត</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ឧបករណ៍បំលែងខ្នាត</h1>
+        <p class="description">ជ្រើសរើសប្រភេទខ្នាតដែលអ្នកចង់បំលែង បញ្ចូលតម្លៃ និងជ្រើសរើសខ្នាតដើម និងខ្នាតគោលដៅ។</p>
+        
+        <div class="converter-type">
+            <button class="converter-btn active" data-type="length">ប្រវែង</button>
+            <button class="converter-btn" data-type="weight">ទំងន់</button>
+            <button class="converter-btn" data-type="temperature">សីតុណ្ហភាព</button>
+            <button class="converter-btn" data-type="volume">បរិមាណ</button>
+        </div>
+        
+        <div class="converter-form">
+            <div class="input-group">
+                <label for="value">តម្លៃដើម</label>
+                <input type="number" id="value" placeholder="បញ្ចូលតម្លៃ..." step="any">
+            </div>
+            
+            <div class="input-group">
+                <label for="from-unit">ខ្នាតដើម</label>
+                <select id="from-unit"></select>
+            </div>
+            
+            <button class="swap-btn" id="swap-btn">⇅ ប្ដូរ</button>
+            
+            <div class="input-group">
+                <label for="to-unit">ខ្នាតគោលដៅ</label>
+                <select id="to-unit"></select>
+            </div>
+            
+            <button id="convert-btn">បំលែង</button>
+            
+            <div class="result" id="result">
+                លទ្ធផលនឹងបង្ហាញនៅទីនេះ
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
